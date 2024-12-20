@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Use JDK 17 (adjust based on your needs)
-        distribution: 'adoptopenjdk'  # Use the AdoptOpenJDK distribution
+        distribution: 'temurin'  # Use the AdoptOpenJDK distribution
 
     # Step 3: Build the project using Maven
     - name: Build with Maven
