@@ -51,5 +51,5 @@ jobs:
       # Step 7: Tag and push Docker image to Docker Hub
       - name: Tag and push Docker image to Docker Hub
         run: |
-          docker tag my-spring-boot-app ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
+          docker tag my-spring-boot-app babu7uc/my-spring-boot-app:latest
+          docker push babu7uc/my-spring-boot-app:latest
