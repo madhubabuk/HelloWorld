@@ -31,7 +31,7 @@ jobs:
       # Step 4: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t my-spring-boot-app .
+          docker build -t my-spring-boot-app-12 .
 
       # Step 5: Verify Docker image creation
       - name: List Docker images
@@ -46,5 +46,5 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker tag my-spring-boot-app ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
+          docker tag my-spring-boot-app-12 ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app-12:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app-12:latest
